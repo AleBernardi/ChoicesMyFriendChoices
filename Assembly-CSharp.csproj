@@ -36,8 +36,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Restart.cs" />
      <Compile Include="Assets\Scripts\RevelaCarta.cs" />
-     <Compile Include="Assets\Scripts\Vence.cs" />
      <None Include="Assets\Playing Cards\Readme_Eng.txt" />
      <None Include="Assets\Playing Cards\Readme_Jpn.txt" />
      <None Include="Assets\Playing Cards\Image Effects\Shaders\Reversibl_Draw.shader" />
