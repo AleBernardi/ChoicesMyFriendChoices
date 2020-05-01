@@ -42,10 +42,6 @@ public class RevelaCarta : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Start");
-
-        Debug.Log(flagplayer);
-
         AtualizaPlayer(flagplayer);
 
         pontuacaoP1=0;
@@ -75,7 +71,6 @@ public class RevelaCarta : MonoBehaviour
             }
         }while(baralho[0] == -1 || baralho[1] == -1 || baralho[2] == -1);
         for(int x = 0; x < qtdCartas; x++){
-            Debug.Log(baralho[x]);
             if(baralho[x] == 2){
                 posAs = x;
             }
@@ -162,11 +157,9 @@ public class RevelaCarta : MonoBehaviour
         switch(player){
             case 1: winnerCanvas.gameObject.SetActive(true);
                     winnerText.text = "<color=#"+ToHtmlStringRGB(corP1)+">Winner winner chicken dinner!\nJogador 1 venceu!!</color>";
-                    Debug.Log("Jogador 1 vence");
                     break;
             case 2: winnerCanvas.gameObject.SetActive(true);
                     winnerText.text = "<color=#"+ToHtmlStringRGB(corP2)+">Winner winner chicken dinner!\nJogador 2 venceu!!</color>";
-                    Debug.Log("Jogador 2 vence");
                     break;
         }
     }
